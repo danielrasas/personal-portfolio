@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url("QuickLinksBackground.jpg")
+}
+
+#div1{
+	padding-left: 1%;
+	padding-top: 0.5%;
+	width: 84%;
+	height: 4.5%;
+	background-color: #80bfff;
+	font-family: sans-serif;
+	font-size: 30px;
+	color: white;
+	opacity: 0.5;
+	animation: div1a 2s 1;
+}
+
+#div2{
+	width: 200px;
+	height: 95%;
+	background-color: #f1f1f1;
+	animation: div2a 2s 1;
+}
+
+#div3{
+	width: 250px;
+	position: relative;
+	top: 70%;
+	border-radius: 10px;
+	background-color: #f1f1f1;
+	padding: 5px;
+	float: right;
+	margin: 50px;
+	animation: div3a 2s 1;
+}
+
+#div4{
+	width: 250px;
+	position: relative;
+	top: 70%;
+	border-radius: 10px;
+	background-color: #f1f1f1;
+	padding: 5px;
+	float: right;
+	margin: 50px;
+	animation: div4a 2s 1;
+}
+
+@keyframes div1a{
+	0%{
+		transform: translate3d(0px, -60px, 0px);
+	}
+	100%{
+		transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+@keyframes div2a{
+	0%{
+		transform: translate3d(200px, 0px, 0px);
+		opacity: 0.0;
+	}
+	100%{
+		transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+@keyframes div3a{
+	0%{
+		opacity:0.0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes div4a{
+	0%{
+		opacity:0.0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+input[type=text]{
+	width: 234px;
+	background-color: #80bfff;
+	margin: 8px 8px;
+}
+
+input[type=text], select{
+	padding: 12px, 20px;
+	display: inline-block;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	width: 234px;
+	background-color: #80bfff;
+	color: white;
+	margin: 8px 8px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	background-color: #66b3ff;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #f1f1f1;
+}
+
+li a{
+	display: block;
+	color: #000;
+	font-size: 16px;
+	padding: 8px 16px;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+li a:hover{
+	background-color: #555;
+	color: white;
+}

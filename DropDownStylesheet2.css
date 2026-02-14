@@ -1,0 +1,173 @@
+.btndrop1{
+    color: #80bfff;
+	background-color:white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.btndrop2{
+	color: #80bfff;
+	background-color:white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btndrop3{
+    color: #80bfff;
+	background-color:white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.drop1{
+	position: relative;
+	width: 5%;
+	height: 5%;
+    display: inline-block;
+	float: right;
+	animation: drop1a 4s 1;
+}
+
+.drop2{
+	position: relative;
+	width: 5%;
+	height: 5%;
+    display: inline-block;
+	float: right;
+	animation: drop2a 3s 1;
+}
+
+.drop3{
+	position: relative;
+	width: 5%;
+	height: 5%;
+    display: inline-block;
+	float: right;
+	animation: drop3a 2s 1;
+}
+
+@keyframes drop3a{
+	0%{
+		transform: translate3d(0px, 100px, 0px);
+		opacity: 0.0;
+	}
+	100%{
+		transform: translate3d(0px, 0px, 0px);
+		opacity: 1;
+	}
+}
+
+@keyframes drop2a{
+	0%{
+		transform: translate3d(0px, 100px, 0px);
+		opacity: 0.0;
+	}
+	33%{
+		transform: translate3d(0px, 100px, 0px);
+		opacity: 0.0;
+	}
+	100%{
+		transform: translate3d(0px, 0px, 0px);
+		opacity: 1;
+	}
+}
+
+@keyframes drop1a{
+	0%{
+		transform: translate3d(0px, 100px, 0px);
+		opacity: 0.0;
+	}
+	50%{
+		transform: translate3d(0px, 100px, 0px);
+		opacity: 0.0;
+	}
+	100%{
+		transform: translate3d(0px, 0px, 0px);
+		opacity: 1;
+	}
+}
+
+.drop1content{
+	display: none;
+    position: absolute;
+	right:0;
+	list-style-type: none;
+}
+
+.drop2content{
+	display: none;
+    position: absolute;
+	right:0;
+	list-style-type: none;
+}
+
+.drop3content{
+	display: none;
+    position: absolute;
+	right:0;
+	list-style-type: none;
+}
+
+.drop1content a{
+	color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+	background-color:#f1f1f1;
+	min-width: 160px;
+    display: block;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.drop2content a{
+	color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+	background-color:#f1f1f1;
+	min-width: 160px;
+    display: block;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.drop3content a{
+	color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+	background-color:#f1f1f1;
+	min-width: 160px;
+    display: block;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.drop1content a:hover{
+	background-color: #555;
+	color: white;
+}
+
+.drop2content a:hover{
+	background-color: #555;
+	color: white;
+}
+
+.drop3content a:hover{
+	background-color: #555;
+	color: white;
+}
+
+.drop1:hover .drop1content{
+	display: block;
+}
+
+.drop2:hover .drop2content{
+	display: block;
+}
+
+.drop3:hover .drop3content{
+	display: block;
+}
