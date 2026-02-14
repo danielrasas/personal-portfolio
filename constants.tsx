@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { Project, Experience, Skill } from './types';
 
 export const PROJECTS: Project[] = [
