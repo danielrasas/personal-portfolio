@@ -19,13 +19,13 @@ export const PROJECTS: Project[] = [
   {
     id: 'gear-systems',
     title: '3D Printed Gear Systems',
-    description: 'Designed and manufactured complex mechanical gear assemblies using additive manufacturing.',
+    description: '3D printed momento given to a cherished teacher, containing an internal gear system to reveal a secret comparment with a thank you note',
     longDescription: 'This project focused on the precision engineering of mechanical power transmission systems using FDM and SLA 3D printing technologies. I designed multi-stage planetary gearboxes with optimized gear tooth profiles to minimize friction and maximize torque transfer. The challenge involved accounting for material shrinkage and thermal expansion of polymers. I utilized SolidWorks for iterative design and stress analysis (FEA) to ensure the gear systems could withstand operational loads. This project bridged my interest in mechanical design with the precision requirements of chemical process equipment.',
-    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=1200',
+    image: '/src/assets/gears1.PNG',
     gallery: [
-      'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&q=80&w=800',
-      'https://images.unsplash.com/photo-1535813543269-799bee353d55?auto=format&fit=crop&q=80&w=800',
-      'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800'
+      '/src/assets/gears2.PNG',
+      '/src/assets/gears3.JPG',
+      '/src/assets/gears4.JPG'
     ],
     tags: ['SolidWorks', '3D Printing', 'Mechanical Design', 'Prototyping'],
     link: '#'

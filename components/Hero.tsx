@@ -22,14 +22,14 @@ const Hero: React.FC = () => {
               {PERSONAL_INFO.tagline}
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
-              <a 
-                href="#projects" 
+              <a
+                href="#projects"
                 className="px-8 py-4 bg-indigo-600 text-white rounded-xl font-semibold shadow-lg shadow-indigo-200 hover:bg-indigo-700 hover:scale-[1.02] transition-all"
               >
                 View Engineering Projects
               </a>
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 className="px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-xl font-semibold hover:bg-slate-50 transition-all"
               >
                 Get In Touch
@@ -38,12 +38,12 @@ const Hero: React.FC = () => {
           </div>
           <div className="hidden md:block md:w-1/3">
             <div className="relative">
-                <div className="absolute inset-0 bg-indigo-600 rounded-2xl rotate-3 -z-10 opacity-10"></div>
-                <img 
-                    src="https://picsum.photos/seed/engineer/600/600" 
-                    alt={PERSONAL_INFO.name}
-                    className="rounded-2xl shadow-2xl object-cover grayscale-0 transition-all duration-500 hover:scale-[1.02]"
-                />
+              <div className="absolute inset-0 bg-indigo-600 rounded-2xl rotate-3 -z-10 opacity-10"></div>
+              <img
+                src="/src/assets/self1.JPG"
+                alt={PERSONAL_INFO.name}
+                className="rounded-2xl shadow-2xl object-cover grayscale-0 transition-all duration-500 hover:scale-[1.02]"
+              />
             </div>
           </div>
         </div>
