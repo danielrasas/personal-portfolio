@@ -11,7 +11,7 @@ const About: React.FC = () => {
             <h3 className="text-3xl font-bold text-slate-900 mb-6">About Me</h3>
             <div className="flex flex-col gap-6">
               <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg md:hidden">
-                <img src="/src/assets/self2.JPG" alt="Daniel Rasas" className="object-cover w-full h-full" />
+                <img src="/assets/self2.JPG" alt="Daniel Rasas" className="object-cover w-full h-full" />
               </div>
               <div className="hidden md:block relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-6">
                 <img src="/src/assets/self2.JPG" alt="Daniel Rasas" className="object-cover w-full h-full" />

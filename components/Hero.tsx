@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-indigo-600 rounded-2xl rotate-3 -z-10 opacity-10"></div>
               <img
-                src="/src/assets/self1.JPG"
+                src="/assets/self1.JPG"
                 alt={PERSONAL_INFO.name}
                 className="rounded-2xl shadow-2xl object-cover grayscale-0 transition-all duration-500 hover:scale-[1.02]"
               />

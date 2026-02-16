@@ -21,11 +21,11 @@ export const PROJECTS: Project[] = [
     title: '3D Printed Gear Systems',
     description: '3D printed momento given to a cherished teacher, containing an internal gear system to reveal a secret comparment with a thank you note',
     longDescription: 'This project focused on the precision engineering of mechanical power transmission systems using FDM and SLA 3D printing technologies. I designed multi-stage planetary gearboxes with optimized gear tooth profiles to minimize friction and maximize torque transfer. The challenge involved accounting for material shrinkage and thermal expansion of polymers. I utilized SolidWorks for iterative design and stress analysis (FEA) to ensure the gear systems could withstand operational loads. This project bridged my interest in mechanical design with the precision requirements of chemical process equipment.',
-    image: '/src/assets/gears1.PNG',
+    image: '/assets/gears1.PNG',
     gallery: [
-      '/src/assets/gears2.PNG',
-      '/src/assets/gears3.JPG',
-      '/src/assets/gears4.JPG'
+      '/assets/gears2.PNG',
+      '/assets/gears3.JPG',
+      '/assets/gears4.JPG'
     ],
     tags: ['SolidWorks', '3D Printing', 'Mechanical Design', 'Prototyping'],
     link: '#'
