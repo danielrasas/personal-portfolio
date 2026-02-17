@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Project 3 - Project Detail</title>
+    <link rel="icon" type="image/png" href="media/favicon.png" />
+    <title>Physics Demonstration Video - Project Detail</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
         rel="stylesheet" />
@@ -54,7 +55,7 @@
             <div class="flex items-center gap-3">
                 <div
                     class="size-8 rounded-lg bg-surface-dark border border-white/10 flex items-center justify-center text-primary">
-                    <span class="material-symbols-outlined text-xl">folder_open</span>
+                    <span class="material-symbols-outlined text-xl">videocam</span>
                 </div>
                 <h1 class="text-lg font-bold tracking-tight text-white">Daniel Rasas</h1>
             </div>
@@ -65,66 +66,49 @@
             </a>
         </div>
     </header>
-    <main class="flex-grow w-full max-w-6xl mx-auto px-6 md:px-12 py-10 md:py-16">
+    <main class="flex-grow w-full max-w-4xl mx-auto px-6 md:px-12 py-10 md:py-16">
         <section class="mb-12">
             <div class="flex flex-col gap-4">
                 <div class="flex flex-wrap gap-2 mb-2">
                     <span
                         class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-surface-dark border border-white/10 text-primary">
-                        PID Control
+                        Physics
                     </span>
                     <span
                         class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-surface-dark border border-white/10 text-gray-300">
-                        2022
+                        2024
                     </span>
                     <span
                         class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-surface-dark border border-white/10 text-gray-300">
-                        Class Project
+                        Education
                     </span>
                 </div>
                 <h2 class="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
-                    PID Controller Tuning
+                    Physics Demonstration Video
                 </h2>
-                <p class="text-xl text-text-secondary font-medium leading-relaxed max-w-2xl">
-                    Developed a Simulink model to test various PID tuning parameters for a temperature control loop.
+                <p class="text-xl text-text-secondary font-medium leading-relaxed">
+                    A visual exploration of core physics principles through the lens of skiing.
                 </p>
             </div>
         </section>
-        <hr class="border-t border-white/10 my-10" />
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
-            <aside class="md:col-span-4 flex flex-col gap-6 order-2 md:order-1">
-                <div class="bg-surface-dark p-6 rounded-xl border border-white/10 shadow-lg">
-                    <h3 class="text-xs uppercase tracking-wider text-gray-500 font-bold mb-4">Project Data</h3>
-                    <div class="flex flex-col gap-4">
-                        <div>
-                            <p class="text-xs text-gray-500 mb-1">Role</p>
-                            <p class="font-medium text-white">Control Systems Engineer</p>
-                        </div>
-                        <div>
-                            <p class="text-xs text-gray-500 mb-1">Duration</p>
-                            <p class="font-medium text-white">2 Months (Spring 2022)</p>
-                        </div>
-                        <div>
-                            <p class="text-xs text-gray-500 mb-1">Tools Used</p>
-                            <p class="font-medium text-white">Simulink, MATLAB</p>
-                        </div>
-                        <div>
-                            <p class="text-xs text-gray-500 mb-1">Outcome</p>
-                            <p class="font-medium text-green-400">20% Overshoot Reduction</p>
-                        </div>
-                    </div>
-                </div>
-            </aside>
-            <article class="md:col-span-8 order-1 md:order-2 space-y-8">
-                <div>
-                    <h3 class="text-2xl font-bold text-white mb-3">Objective</h3>
-                    <p class="text-base text-text-secondary leading-relaxed">
-                        To implement and tune a PID controller for a temperature control loop in a chemical reactor
-                        simulation, minimizing settling time and overshoot.
-                    </p>
-                </div>
-            </article>
+
+        <div
+            class="aspect-video w-full rounded-2xl overflow-hidden bg-surface-dark border border-white/10 shadow-2xl mb-12">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/3GnhMaV-JLM?si=VLQdGqcTJgmX62YV"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+
+        <article class="prose prose-invert max-w-none">
+            <h3 class="text-2xl font-bold text-white mb-4">Project Description</h3>
+            <p class="text-lg text-text-secondary leading-relaxed">
+                This project focuses on identifying complex engineering and physics problems, clearly communicating
+                solutions, and implementing improvements. Using skiing as a dynamic medium, I demonstrate core physics
+                concepts such as friction, momentum, and inertia. By creating physical analogies, the video makes
+                abstract principles accessible and engaging for learners of all levels.
+            </p>
+        </article>
     </main>
 </body>
 
