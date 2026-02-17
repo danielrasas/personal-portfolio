@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ChemECar Chemical Clock Design - Project Detail</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3b82f6",
+                        "background-dark": "#121212",
+                        "surface-dark": "#1e1e1e",
+                        "text-primary": "#ffffff",
+                        "text-secondary": "#a1a1aa",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        *,
+        *::before,
+        *::after {
+            transition: none !important;
+            animation: none !important;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-dark font-display text-text-primary antialiased min-h-screen flex flex-col selection:bg-primary/30 selection:text-white">
+    <header class="w-full bg-background-dark/80 backdrop-blur-md border-b border-white/5 sticky top-0 z-50">
+        <div class="max-w-6xl w-full mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div
+                    class="size-8 rounded-lg bg-surface-dark border border-white/10 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-xl">science</span>
+                </div>
+                <h1 class="text-lg font-bold tracking-tight text-white">Daniel Rasas</h1>
+            </div>
+            <a class="flex items-center gap-2 text-sm font-semibold text-primary hover:text-white transition-colors"
+                href="index.html">
+                <span class="material-symbols-outlined text-lg">arrow_back</span>
+                <span>Back to Home</span>
+            </a>
+        </div>
+    </header>
+    <main class="flex-grow w-full max-w-6xl mx-auto px-6 md:px-12 py-10 md:py-16">
+        <section class="mb-12">
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-wrap gap-2 mb-2">
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-surface-dark border border-white/10 text-primary">
+                        Chemical Engineering
+                    </span>
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-surface-dark border border-white/10 text-gray-300">
+                        2023
+                    </span>
+                    <span
+                        class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-surface-dark border border-white/10 text-gray-300">
+                        Team Lead
+                    </span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
+                    ChemECar Chemical Clock Design
+                </h2>
+                <p class="text-xl text-text-secondary font-medium leading-relaxed max-w-2xl">
+                    Precision timing mechanism using an Iodine Clock Reaction for the AIChE regional competition.
+                </p>
+            </div>
+        </section>
+        <hr class="border-t border-white/10 my-10" />
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+            <aside class="md:col-span-4 flex flex-col gap-6 order-2 md:order-1">
+                <div class="bg-surface-dark p-6 rounded-xl border border-white/10 shadow-lg">
+                    <h3 class="text-xs uppercase tracking-wider text-gray-500 font-bold mb-4">Project Data</h3>
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Role</p>
+                            <p class="font-medium text-white">Lead Design Engineer</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Duration</p>
+                            <p class="font-medium text-white">4 Months (Spring 2023)</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Tools Used</p>
+                            <p class="font-medium text-white">MATLAB, SolidWorks, Arduino</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Outcome</p>
+                            <p class="font-medium text-green-400">2nd Place Regional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-500/5 p-6 rounded-xl border border-primary/20">
+                    <h3 class="text-xs uppercase tracking-wider text-primary font-bold mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg">tune</span>
+                        Specs
+                    </h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex justify-between border-b border-primary/10 pb-2 last:border-0 last:pb-0">
+                            <span class="text-gray-400">Accuracy</span>
+                            <span class="font-bold text-white">±2.0 sec</span>
+                        </li>
+                        <li class="flex justify-between border-b border-primary/10 pb-2 last:border-0 last:pb-0">
+                            <span class="text-gray-400">Reaction Type</span>
+                            <span class="font-bold text-white">Iodine Clock</span>
+                        </li>
+                        <li class="flex justify-between border-b border-primary/10 pb-2 last:border-0 last:pb-0">
+                            <span class="text-gray-400">Payload</span>
+                            <span class="font-bold text-white">0-500 mL H₂O</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <article class="md:col-span-8 order-1 md:order-2 space-y-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Objective</h3>
+                    <p class="text-base text-text-secondary leading-relaxed">
+                        The primary goal was to design a vehicle powered and timed exclusively by chemical reactions to
+                        carry a specified variable load across a specific distance. Our team focused heavily on the
+                        precision of the stopping mechanism, identifying it as the critical failure point in previous
+                        designs. The competition required the vehicle to stop exactly at a distance announced only one
+                        hour prior to the run.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-3">The Chemical Clock Mechanism</h3>
+                    <p class="text-base text-text-secondary leading-relaxed mb-4">
+                        We utilized an Iodine Clock Reaction (Landolt reaction). By manipulating the initial
+                        concentrations of reactants based on a rate law we empirically derived, we could control the
+                        time to color change. This color change was detected by a photoresistor circuit which triggered
+                        a relay to cut power to the motor.
+                    </p>
+                    <div class="bg-surface-dark border-l-4 border-primary p-5 rounded-r-lg">
+                        <p class="italic text-gray-300 text-sm leading-relaxed">
+                            "The calibration process involved over 50 test runs to minimize the error margin caused by
+                            temperature fluctuations, achieving a consistency of ±2 seconds accuracy over a 2-minute run
+                            time."
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Engineering Challenges</h3>
+                    <p class="text-base text-text-secondary leading-relaxed">
+                        One significant challenge was the ambient temperature sensitivity of the reaction kinetics. To
+                        mitigate this, we developed a dynamic lookup table in MATLAB that adjusted the required reactant
+                        volumes based on the ambient temperature measured on race day. This 'Cold Start' protocol
+                        ensured that our calibration curves remained valid even if the competition venue was
+                        significantly warmer or cooler than our lab environment.
+                    </p>
+                </div>
+            </article>
+        </div>
+        <section class="mt-16">
+            <h3 class="text-2xl font-bold text-white mb-6 border-b border-white/10 pb-4">Technical Gallery</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="group flex flex-col gap-3">
+                    <div
+                        class="aspect-video w-full overflow-hidden rounded-lg bg-surface-dark relative border border-white/10">
+                        <img alt="Lab setup showing beakers with clear and dark liquids for calibration testing"
+                            class="h-full w-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                            src="media/proj1_1.jpg" />
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-sm font-semibold text-white">Temperature Calibration</span>
+                        <span class="text-xs text-gray-400 mt-1">Testing reaction rates in a controlled environment to
+                            build the thermal offset model.</span>
+                    </div>
+                </div>
+                <div class="group flex flex-col gap-3">
+                    <div
+                        class="aspect-video w-full overflow-hidden rounded-lg bg-surface-dark relative border border-white/10">
+                        <img alt="Top down view of the car chassis with clear wiring and reaction vessel"
+                            class="h-full w-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFR_7HvVgct1FtOzPbT-NcXn4tQI5IJV3dJSAp7Aj_aMGWtZBkZaBztE6O6a_ynSf6yQWcWttkK_wgvbpY4DtXgusblYSMRpQnEc-2kpi7H62-o1orIHiPhp66trhzE0CPdWPiHbU0gnOJmg1ahhO2sX7AUO346DWEN_qsYTXOVuT5ytlSYGJCbGU9WJyzXF7r6tAcq_13DsvgiL5TVTUJGKD5iH5XFKkM_-qMeX4qj9fp20OSgiAwu1HDzWSNNN36jL0Eh1uIBFU" />
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-sm font-semibold text-white">Chassis Assembly</span>
+                        <span class="text-xs text-gray-400 mt-1">Final assembly showing the reaction chamber placement
+                            for optimal photoresistor visibility.</span>
+                    </div>
+                </div>
+                <div class="group flex flex-col gap-3 md:col-span-2">
+                    <div
+                        class="w-full bg-surface-dark rounded-lg border border-dashed border-white/10 p-8 flex flex-col items-center justify-center text-center hover:bg-surface-dark/80 transition-colors">
+                        <div
+                            class="size-12 rounded-full bg-surface-dark border border-white/10 text-primary flex items-center justify-center mb-3">
+                            <span class="material-symbols-outlined">description</span>
+                        </div>
+                        <h4 class="text-sm font-bold text-white">Full Technical Report</h4>
+                        <p class="text-xs text-gray-400 max-w-md mt-1 mb-4">
+                            The complete PDF documentation including code snippets, raw data logs, and safety
+                            assessments is available upon request.
+                        </p>
+                        <button
+                            class="text-sm font-medium text-primary hover:text-white hover:underline transition-colors">Request
+                            Access</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
