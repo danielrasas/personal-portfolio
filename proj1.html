@@ -51,7 +51,7 @@
 <body
     class="bg-background-dark font-display text-text-primary antialiased min-h-screen flex flex-col selection:bg-primary/30 selection:text-white">
     <header class="w-full bg-background-dark/80 backdrop-blur-md border-b border-white/5 sticky top-0 z-50">
-        <div class="max-w-6xl w-full mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+        <div class="max-w-6xl w-full mx-auto px-6 md:px-12 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <div
                     class="size-8 rounded-lg bg-surface-dark border border-white/10 flex items-center justify-center text-primary">
@@ -66,17 +66,17 @@
             </a>
         </div>
     </header>
-    <main class="flex-grow w-full max-w-6xl mx-auto px-6 md:px-12 py-10 md:py-16">
-        <section class="mb-12">
+    <main class="flex-grow w-full max-w-6xl mx-auto px-6 md:px-12 pt-6 pb-10 md:pt-10 md:pb-16">
+        <section class="mb-8">
             <div class="flex flex-col gap-4">
                 <div class="flex flex-wrap gap-2 mb-2">
                     <span
                         class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-surface-dark border border-white/10 text-primary">
-                        Chemical Engineering
+                        Python
                     </span>
                     <span
                         class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-surface-dark border border-white/10 text-gray-300">
-                        2023
+                        Arduino
                     </span>
                     <span
                         class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-surface-dark border border-white/10 text-gray-300">
@@ -86,55 +86,50 @@
                 <h2 class="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
                     ChemECar Chemical Clock Design
                 </h2>
-                <p class="text-xl text-text-secondary font-medium leading-relaxed max-w-2xl">
-                    Precision timing mechanism using an Iodine Clock Reaction for the AIChE regional competition.
-                </p>
+
             </div>
         </section>
-        <hr class="border-t border-white/10 my-10" />
+        <hr class="border-t border-white/10 my-6" />
         <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
-            <aside class="md:col-span-4 flex flex-col gap-6 order-2 md:order-1">
+            <aside class="md:col-span-4 flex flex-col gap-6 order-2">
+                <div class="bg-surface-dark p-6 rounded-xl border border-white/10 shadow-lg">
+                    <h3 class="text-xs uppercase tracking-wider text-gray-500 font-bold mb-4">Video walk-through</h3>
+                    <div class="flex flex-col gap-4">
+                        <div
+                            class="w-full overflow-hidden rounded-lg bg-surface-dark border border-white/10 mb-2 aspect-[9/16]">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8ihDHvjEVSg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
                 <div class="bg-surface-dark p-6 rounded-xl border border-white/10 shadow-lg">
                     <h3 class="text-xs uppercase tracking-wider text-gray-500 font-bold mb-4">Project Data</h3>
                     <div class="flex flex-col gap-4">
                         <div>
                             <p class="text-xs text-gray-500 mb-1">Role</p>
-                            <p class="font-medium text-white">Lead Design Engineer</p>
+                            <p class="font-medium text-white">Stopping Team Lead (& Co-lead)</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 mb-1">Key Contribution</p>
+                            <p class="font-medium text-white">Chemical Clock Mechanism</p>
                         </div>
                         <div>
                             <p class="text-xs text-gray-500 mb-1">Duration</p>
-                            <p class="font-medium text-white">4 Months (Spring 2023)</p>
+                            <p class="font-medium text-white">Fall 2022 - Spring 2025</p>
                         </div>
                         <div>
                             <p class="text-xs text-gray-500 mb-1">Tools Used</p>
-                            <p class="font-medium text-white">MATLAB, SolidWorks, Arduino</p>
+                            <p class="font-medium text-white">Python, Arduino</p>
                         </div>
                         <div>
                             <p class="text-xs text-gray-500 mb-1">Outcome</p>
-                            <p class="font-medium text-green-400">2nd Place Regional</p>
+                            <p class="font-medium text-green-400">4th Place Regionals (2024)</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-blue-500/5 p-6 rounded-xl border border-primary/20">
-                    <h3 class="text-xs uppercase tracking-wider text-primary font-bold mb-4 flex items-center gap-2">
-                        <span class="material-symbols-outlined text-lg">tune</span>
-                        Specs
-                    </h3>
-                    <ul class="space-y-3 text-sm text-gray-300">
-                        <li class="flex justify-between border-b border-primary/10 pb-2 last:border-0 last:pb-0">
-                            <span class="text-gray-400">Accuracy</span>
-                            <span class="font-bold text-white">±2.0 sec</span>
-                        </li>
-                        <li class="flex justify-between border-b border-primary/10 pb-2 last:border-0 last:pb-0">
-                            <span class="text-gray-400">Reaction Type</span>
-                            <span class="font-bold text-white">Iodine Clock</span>
-                        </li>
-                        <li class="flex justify-between border-b border-primary/10 pb-2 last:border-0 last:pb-0">
-                            <span class="text-gray-400">Payload</span>
-                            <span class="font-bold text-white">0-500 mL H₂O</span>
-                        </li>
-                    </ul>
-                </div>
+
 
                 <div class="bg-surface-dark p-6 rounded-xl border border-white/10 shadow-lg">
                     <h3 class="text-xs uppercase tracking-wider text-gray-500 font-bold mb-4">Fundraising</h3>
@@ -153,56 +148,178 @@
                     </div>
                 </div>
             </aside>
-            <article class="md:col-span-8 order-1 md:order-2 space-y-8">
+            <article class="md:col-span-8 order-1 space-y-8">
                 <div>
-                    <h3 class="text-2xl font-bold text-white mb-3">Objective</h3>
-                    <p class="text-base text-text-secondary leading-relaxed">
-                        The primary goal was to design a vehicle powered and timed exclusively by chemical reactions to
-                        carry a specified variable load across a specific distance. Our team focused heavily on the
-                        precision of the stopping mechanism, identifying it as the critical failure point in previous
-                        designs. The competition required the vehicle to stop exactly at a distance announced only one
-                        hour prior to the run.
+                    <h3 class="text-2xl font-bold text-white mb-3">What is ChemECar?</h3>
+                    <p class="text-base text-text-secondary leading-relaxed mb-6">
+                        In ChemECar, we design and build a small car that is powered and
+                        controlled by chemical reactions. Our goal is to get as close as possible to a target distance,
+                        chosen on the day of competition. Think of this like ice curling, except it's focused on
+                        reaction kinetics
+                        and safety.
                     </p>
+                    <div class="bg-surface-dark border border-white/10 rounded-xl p-6 shadow-sm">
+                        <h4 class="text-white font-semibold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary">flag</span>
+                            Competition Goals
+                        </h4>
+                        <ul class="space-y-4 text-gray-400">
+                            <li class="flex items-start gap-3 opacity-60">
+                                <span class="mt-1.5 size-2 rounded-full bg-gray-600 flex-shrink-0"></span>
+                                <span class="leading-relaxed">Build a shoebox-sized car</span>
+                            </li>
+                            <li class="flex items-start gap-3 opacity-60">
+                                <span class="mt-1.5 size-2 rounded-full bg-gray-600 flex-shrink-0"></span>
+                                <span class="leading-relaxed">Power the car using a homemade electrochemical cell</span>
+                            </li>
+                            <!-- Highlighted Item -->
+                            <li
+                                class="flex flex-col gap-2 bg-primary/10 -mx-3 p-3 rounded-xl border border-primary/20 shadow-inner">
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex items-start gap-3">
+                                        <span
+                                            class="mt-1.5 size-2 rounded-full bg-primary flex-shrink-0 ring-4 ring-primary/20 animate-pulse"></span>
+                                        <span class="leading-relaxed text-white font-bold text-lg">Stop the car using a
+                                            chemical clock timer</span>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span
+                                            class="mt-1.5 size-2 rounded-full bg-primary flex-shrink-0 ring-4 ring-primary/20 animate-pulse"></span>
+                                        <span class="leading-relaxed text-white font-bold text-lg">Be as close to the
+                                            target distance as possible</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="text-xs font-bold text-primary uppercase tracking-wider pl-6 flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-sm">group</span>
+                                    My group's focuses
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-bold text-white mb-3">The Chemical Clock Mechanism</h3>
-                    <p class="text-base text-text-secondary leading-relaxed mb-4">
-                        We utilized an Iodine Clock Reaction (Landolt reaction). By manipulating the initial
-                        concentrations of reactants based on a rate law we empirically derived, we could control the
-                        time to color change. This color change was detected by a photoresistor circuit which triggered
-                        a relay to cut power to the motor.
+                    <h3 class="text-2xl font-bold text-white mb-3">Objective - Stopping Mechanism</h3>
+                    <p class="text-base text-text-secondary leading-relaxed">
+                        Our constraints were simple: start a chemical reaction, measure its progress, and stop the car
+                        at exactly
+                        the target distance. The only variable we can control is how much reactant we put in the
+                        chemical timer.
+                        Sounds fun, huh?
                     </p>
-                    <div class="bg-surface-dark border-l-4 border-primary p-5 rounded-r-lg">
-                        <p class="italic text-gray-300 text-sm leading-relaxed">
-                            "The calibration process involved over 50 test runs to minimize the error margin caused by
-                            temperature fluctuations, achieving a consistency of ±2 seconds accuracy over a 2-minute run
-                            time."
+                </div>
+                <div class="space-y-4">
+                    <!-- Row 1: Intro & Main Image -->
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-white mb-3">Reaction Vessel and Chemistry</h3>
+                            <p class="text-base text-text-secondary leading-relaxed mb-4">
+                                We've learned our lesson from prior designs (our 3D printed reaction cell was not great
+                                for
+                                containing liquids),
+                                and decided to use brass plumbing fittings for our reaction vessel.
+                            </p>
+                            <div>
+                                <h4 class="text-white font-semibold mb-3">
+                                    Why brass fittings?
+                                </h4>
+                                <ul class="space-y-2 text-sm text-text-secondary">
+                                    <li class="flex items-start gap-3">
+                                        <span class="mt-1.5 size-1.5 rounded-full bg-primary/60 flex-shrink-0"></span>
+                                        <span><strong class="text-white">Liquid Containment</strong>: These 1/4"
+                                            standard
+                                            pipes
+                                            and fittings are designed to hold liquid, perfect for our needs. </span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="mt-1.5 size-1.5 rounded-full bg-primary/60 flex-shrink-0"></span>
+                                        <span><strong class="text-white">Low cost</strong>: No more than $60 worth of
+                                            ace hardware components and a few sensors</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="mt-1.5 size-1.5 rounded-full bg-primary/60 flex-shrink-0"></span>
+                                        <span><strong class="text-white">Standard Threads</strong>: standard
+                                            fittings allowed us to plug in 2 pressure gauges and a pressure relief valve
+                                            seamlessly.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:w-2/5 shrink-0 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                            <img src="media/proj1_1.jpg" alt="Reaction Vessel" class="w-full h-auto object-cover" />
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Diagram & Description (Left Aligned) -->
+                    <div class="flex flex-col gap-6 max-w-2xl">
+                        <div class="bg-surface-dark/50 border border-white/10 p-4 rounded-xl w-fit">
+                            <img src="media/proj1_7.png" alt="Reaction Vessel Diagram"
+                                class="h-auto rounded-lg mb-3 opacity-90" />
+                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-bold">
+                                Decomposition of hydrogen peroxide via potassium iodide catalyst
+                            </p>
+                        </div>
+                        <p class="text-base text-text-secondary leading-relaxed">
+                            We decided to use household reactants (potassium iodide, hydrogen peroxide) to
+                            perform the decomposition reaction, as they are readily available and already in safe
+                            concentrations. They also produce only oxygen and water as byproducts, making waste
+                            disposal simple.
                         </p>
                     </div>
+
+                    <!-- Row 3: Detail & Image -->
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div class="flex-1">
+                            <!-- NEW TEXT HERE -->
+                            <p class="text-base text-text-secondary leading-relaxed">
+                                We varied the mass of catalyst added, and recorded the time until the pressure
+                                threshold was reached. After collecting our data, we had a good curve fit to
+                                model the reaction kinetics. Why is this helpful in the first place? <span
+                                    class="font-bold text-white">It allows
+                                    us to add exactly the needed catalyst in order for the car to run for a specific
+                                    amount of time.</span>
+                            </p>
+                            <p class="text-base text-text-secondary leading-relaxed mt-4">
+                                The chassis design team and the power cell team give us the car speed. Knowing
+                                the car speed and the distance needed, we determine exactly how long it should
+                                run for. Then we put that much catalyst in and let it run!
+                            </p>
+                        </div>
+                        <div class="md:w-2/5 shrink-0 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                            <img src="media/proj1_6.png" alt="Chemistry Detail" class="w-full h-auto object-cover" />
+                        </div>
+                    </div>
+
                 </div>
                 <div>
                     <h3 class="text-2xl font-bold text-white mb-3">Engineering Challenges</h3>
                     <p class="text-base text-text-secondary leading-relaxed">
-                        One significant challenge was the ambient temperature sensitivity of the reaction kinetics. To
-                        mitigate this, we developed a dynamic lookup table in MATLAB that adjusted the required reactant
-                        volumes based on the ambient temperature measured on race day. This 'Cold Start' protocol
-                        ensured that our calibration curves remained valid even if the competition venue was
-                        significantly warmer or cooler than our lab environment.
+                        One significant challenge was the ambient temperature sensitivity of the reaction kinetics. We
+                        were baffled for several weeks trying to figure out why the reaction behaved differently while
+                        we though all variables were being controlled. We eventually realized that ambient
+                        temperature fluctuations were the cause, especially when we held the vessel during cleaning. To
+                        mitigate this, we decided to run the reaction allways at a known temperature: 0 degC. We
+                        achieved this by jacketing the vessel with icewater.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Safety</h3>
+                    <p class="text-base text-text-secondary leading-relaxed">
+                        Building pressure in a sealed container like this is dangerous. We installed a manual
+                        pressure gauge as a backup to the pressure sensor to make sure we are always aware of the
+                        internal pressure. We installed a pressure relief valve set at 5 psig, to make sure we are
+                        within
+                        the AIChE rules (and so we don't have to hydrotest the vessel). This was a narrow range,
+                        so we had to use a very accurate pressure sensor. We also limited how much hydrogen peroxide
+                        was added: we calculated that if all of it decomposed, it would not exceed the design pressure
+                        of the brass components.
                     </p>
                 </div>
             </article>
         </div>
         <section class="mt-16">
-            <h3 class="text-2xl font-bold text-white mb-6 border-b border-white/10 pb-4">Technical Gallery</h3>
+            <h3 class="text-2xl font-bold text-white mb-6 border-b border-white/10 pb-4">Competition Photos</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Image 1 -->
-                <div class="group flex flex-col gap-3">
-                    <div class="w-full rounded-lg bg-surface-dark relative border border-white/10 overflow-hidden">
-                        <img alt="Project View 1"
-                            class="w-full h-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                            src="media/proj1_1.jpg" />
-                    </div>
-                </div>
 
                 <!-- Image 2 -->
                 <div class="group flex flex-col gap-3">
@@ -240,14 +357,6 @@
                     </div>
                 </div>
 
-                <!-- Image 6 -->
-                <div class="group flex flex-col gap-3">
-                    <div class="w-full rounded-lg bg-surface-dark relative border border-white/10 overflow-hidden">
-                        <img alt="Project View 6"
-                            class="w-full h-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                            src="media/proj1_6.png" />
-                    </div>
-                </div>
             </div>
         </section>
     </main>
