@@ -33,11 +33,7 @@
         }
     </script>
     <style>
-        *,
-        *::before,
-        *::after {
-            transition: none !important;
-            animation: none !important;
+        html {
             scroll-behavior: smooth;
         }
 
@@ -53,10 +49,6 @@
     <header class="w-full bg-background-dark/80 backdrop-blur-md border-b border-white/5 sticky top-0 z-50">
         <div class="max-w-6xl w-full mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div
-                    class="size-8 rounded-lg bg-surface-dark border border-white/10 flex items-center justify-center text-primary">
-                    <span class="material-symbols-outlined text-xl">settings</span>
-                </div>
                 <h1 class="text-lg font-bold tracking-tight text-white">Daniel Rasas</h1>
             </div>
             <a class="flex items-center gap-2 text-sm font-semibold text-primary hover:text-white transition-colors"
@@ -72,22 +64,19 @@
                 <div class="flex flex-wrap gap-2 mb-2">
                     <span
                         class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-surface-dark border border-white/10 text-primary">
-                        Mechanical Engineering
+                        3D Printing
                     </span>
                     <span
                         class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-surface-dark border border-white/10 text-gray-300">
-                        2023
+                        Fusion 360
                     </span>
-                    <span
-                        class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-surface-dark border border-white/10 text-gray-300">
-                        Design
-                    </span>
+
                 </div>
                 <h2 class="text-4xl md:text-5xl font-black tracking-tighter text-white leading-tight">
                     3D Printed Gear System
                 </h2>
                 <p class="text-xl text-text-secondary font-medium leading-relaxed max-w-2xl">
-                    3D printed gift for an amazing teacher, with a gear system opening a interior
+                    3D printed gift for an amazing teacher, with a gear system opening an interior
                     compartment (containing a thank-you note)
                 </p>
             </div>
@@ -100,7 +89,7 @@
                     <div class="flex flex-col gap-4">
                         <div>
                             <p class="text-xs text-gray-500 mb-1">Duration</p>
-                            <p class="font-medium text-white">2 Weeks</p>
+                            <p class="font-medium text-white">3 weeks from idea to completion</p>
                         </div>
                         <div>
                             <p class="text-xs text-gray-500 mb-1">Tools Used</p>
@@ -117,8 +106,7 @@
                                 class="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity" />
                         </div>
                         <p class="text-sm text-gray-300 leading-relaxed">
-                            "Gedimino Pilis is a famous national landmark in Lithuania, so I thought it would be the
-                            perfect gift for my Lithuanian teacher"
+                            Gedimino Pilis, overlooking Vilnius, the capital of Lithuania.
                         </p>
                     </div>
                 </div>
@@ -127,28 +115,36 @@
                 <div>
                     <h3 class="text-2xl font-bold text-white mb-3">Objective</h3>
                     <p class="text-base text-text-secondary leading-relaxed">
-                        The primary goal was to design a gear system capable of transmitting high torque while
-                        minimizing weight and wear.
+                        I wanted to show appreciation for my Lithuanian teacher and tutor, who
+                        had helped me master my mother tongue. I decided to 3D print a model of Gedimino Pilis, a
+                        famous national landmark in Lithuania. Inside, I created a secret compartment, which opened
+                        with a gear system. The compartment contained a thank-you note.
                     </p>
                 </div>
                 <div>
                     <h3 class="text-2xl font-bold text-white mb-3">Mechanism Design</h3>
                     <p class="text-base text-text-secondary leading-relaxed mb-4">
-                        We utilized advanced CAD modeling and Finite Element Analysis (FEA) to ensure structural
-                        integrity under load.
+                        I used Fusion 360 to design every component in the system. The main components were the
+                        shell (the castle exterior itself), the internal compartment (with a gear rack along the side),
+                        the gears themselves, and a locking mechanism (to stop the compartment from drifting out).
                     </p>
-                    <div class="bg-surface-dark border-l-4 border-primary p-5 rounded-r-lg">
-                        <p class="italic text-gray-300 text-sm leading-relaxed">
-                            "The design achieved a 15% weight reduction while maintaining a safety factor of 2.0."
-                        </p>
-                    </div>
                 </div>
                 <div>
                     <h3 class="text-2xl font-bold text-white mb-3">Engineering Challenges</h3>
-                    <p class="text-base text-text-secondary leading-relaxed">
-                        The gear tolerances were not quite right, so the gears were pretty stiff. After lots of sanding,
-                        the mechanism works.
-                    </p>
+                    <ul class="list-disc list-outside ml-5 text-base text-text-secondary leading-relaxed space-y-2">
+                        <li>Getting 3D printed plastic gears to mesh properly (and spin without locking up) was a huge
+                            challenge. I had to print several iterations, increasing the leeway between teeth each time.
+                            Even after that, I had to sand the gears down so they would not lock up instantly.
+                            The final product still required lots of force to turn, but I was happy with the results.
+                            It took me less than 2 weeks to go from learning about gears in Fusion 360 to having a
+                            working prototype.</li>
+                        <li>The locking mechanism became unnecessary, as the internal compartment had too much friction
+                            to slide out on its own. However, I still made it work: I used the spring from a ballpoint
+                            pen to force a small peg into the gear rack. You had to pull on a small tab to unlock the
+                            rack. However, this made it hard to open the compartment initially: you had to pull the tab
+                            while carefully spinning the handle to turn the gears.
+                        </li>
+                    </ul>
                 </div>
             </article>
         </div>
@@ -163,8 +159,17 @@
                             src="media/gears1.PNG" />
                     </div>
                     <div class="flex flex-col">
-                        <span class="text-sm font-semibold text-white">Gear View 1</span>
-                        <p class="text-xs text-gray-400 mt-1 italic">Add brief description here...</p>
+                        <span class="text-sm font-semibold text-white">Internal compartment and gears</span>
+                        <p class="text-xs text-gray-400 mt-1 italic">Here is the shape of the internal compartment. The
+                            hand crank
+                            at the bottom has a small shaft that goes through the outer shell (not pictured), to a
+                            right-angle
+                            gear set. Then, 3 gears bring the rotational motion to the top gear, which is high enough to
+                            maintain
+                            connection with the rack even if the compartment is all the way up. On the far left, prongs
+                            stick out
+                            which keep the internal compartment from sliding out of the shell.
+                        </p>
                     </div>
                 </div>
 
@@ -176,8 +181,13 @@
                             src="media/gears2.PNG" />
                     </div>
                     <div class="flex flex-col">
-                        <span class="text-sm font-semibold text-white">Gear View 2</span>
-                        <p class="text-xs text-gray-400 mt-1 italic">Add brief description here...</p>
+                        <span class="text-sm font-semibold text-white">Locking mechanism</span>
+                        <p class="text-xs text-gray-400 mt-1 italic">The extrusion on the far right side will actually
+                            belong
+                            to the shell, but needs to be a separate component to house the locking tab. The tab, at
+                            resting-state,
+                            is spring loaded into the gear rack.
+                        </p>
                     </div>
                 </div>
 
@@ -189,8 +199,13 @@
                             src="media/gears3.JPG" />
                     </div>
                     <div class="flex flex-col">
-                        <span class="text-sm font-semibold text-white">Gear View 3</span>
-                        <p class="text-xs text-gray-400 mt-1 italic">Add brief description here...</p>
+                        <span class="text-sm font-semibold text-white">Completed Assembly</span>
+                        <p class="text-xs text-gray-400 mt-1 italic">The locking mechanism and tab are screwed into the
+                            shell,
+                            keeping it accessible from the outside. As you can see, the 3D printing isn't perfect, but
+                            I'm still proud of
+                            the product.
+                        </p>
                     </div>
                 </div>
 
@@ -202,26 +217,8 @@
                             src="media/gears4.JPG" />
                     </div>
                     <div class="flex flex-col">
-                        <span class="text-sm font-semibold text-white">Gear View 4</span>
-                        <p class="text-xs text-gray-400 mt-1 italic">Add brief description here...</p>
-                    </div>
-                </div>
-
-                <div class="group flex flex-col gap-3 md:col-span-2">
-                    <div
-                        class="w-full bg-surface-dark rounded-lg border border-dashed border-white/10 p-8 flex flex-col items-center justify-center text-center hover:bg-surface-dark/80 transition-colors">
-                        <div
-                            class="size-12 rounded-full bg-surface-dark border border-white/10 text-primary flex items-center justify-center mb-3">
-                            <span class="material-symbols-outlined">description</span>
-                        </div>
-                        <h4 class="text-sm font-bold text-white">Full Technical Report</h4>
-                        <p class="text-xs text-gray-400 max-w-md mt-1 mb-4">
-                            The complete PDF documentation including code snippets, raw data logs, and safety
-                            assessments is available upon request.
-                        </p>
-                        <button
-                            class="text-sm font-medium text-primary hover:text-white hover:underline transition-colors">Request
-                            Access</button>
+                        <span class="text-sm font-semibold text-white">Internal compartment with note</span>
+                        <p class="text-xs text-gray-400 mt-1 italic"></p>
                     </div>
                 </div>
             </div>

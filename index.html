@@ -33,11 +33,7 @@
         }
     </script>
     <style>
-        *,
-        *::before,
-        *::after {
-            transition: none !important;
-            animation: none !important;
+        html {
             scroll-behavior: smooth;
         }
 
@@ -50,7 +46,29 @@
 
 <body
     class="bg-background-dark font-display text-text-primary antialiased selection:bg-primary/30 selection:text-white">
-    <section class="min-h-screen w-full flex items-center justify-center py-16 px-6 md:px-12 border-b border-white/5">
+    <header
+        class="w-full bg-background-dark/80 backdrop-blur-md border-b border-white/5 sticky top-0 z-50 px-6 md:px-12">
+        <div class="max-w-6xl w-full mx-auto py-3 flex items-center justify-between">
+            <div id="nav-name" class="opacity-0 transition-opacity duration-300 pointer-events-none">
+                <span class="text-lg font-bold tracking-tight text-white">Daniel Rasas</span>
+            </div>
+            <nav class="flex items-center gap-6">
+                <a class="text-sm font-semibold text-text-secondary hover:text-white transition-colors" href="#about">
+                    About
+                </a>
+                <a class="text-sm font-semibold text-text-secondary hover:text-white transition-colors"
+                    href="#work-experience">
+                    Work Experience
+                </a>
+                <a class="text-sm font-semibold text-text-secondary hover:text-white transition-colors"
+                    href="#my-projects">
+                    My Projects
+                </a>
+            </nav>
+        </div>
+    </header>
+    <section id="about"
+        class="w-full flex items-center justify-center pt-8 pb-12 px-6 md:px-12 border-b border-white/5">
         <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             <div class="flex flex-col gap-6 order-2 md:order-1">
                 <div>
@@ -76,16 +94,18 @@
                 </div>
                 <p class="text-lg text-text-secondary leading-relaxed max-w-lg">
                     Focused on accurately identifying engineering problems, clearly communicating solutions, and
-                    implementing the best possible improvement.
+                    implementing the best possible improvement. <a href="#my-projects"
+                        class="text-primary hover:text-white font-medium underline underline-offset-4 decoration-primary/30 hover:decoration-white transition-colors">Check
+                        out my projects!</a>
                 </p>
                 <div class="flex items-center gap-6 mt-4">
-                    <a class="flex items-center gap-2 text-white font-semibold hover:text-primary border-b border-transparent hover:border-primary pb-0.5"
-                        href="media/Rasas_Resume.pdf" target="_blank">
+                    <a class="flex items-center gap-2 text-white font-semibold hover:text-primary focus:outline-none focus:text-primary transition-colors border-b border-transparent hover:border-primary focus:border-primary pb-0.5"
+                        href="media/Rasas_Resume.pdf" target="_blank" rel="noopener noreferrer">
                         <span class="material-symbols-outlined">description</span>
                         Resume
                     </a>
-                    <a class="flex items-center gap-2 text-white font-semibold hover:text-primary border-b border-transparent hover:border-primary pb-0.5"
-                        href="https://www.linkedin.com/in/danielrasas">
+                    <a class="flex items-center gap-2 text-white font-semibold hover:text-primary focus:outline-none focus:text-primary transition-colors border-b border-transparent hover:border-primary focus:border-primary pb-0.5"
+                        href="https://www.linkedin.com/in/danielrasas" target="_blank" rel="noopener noreferrer">
                         <span class="sr-only">LinkedIn</span>
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                             <path
@@ -104,25 +124,30 @@
             <div class="order-1 md:order-2 flex justify-center md:justify-end">
                 <div
                     class="relative w-full rounded-2xl overflow-hidden bg-surface-dark border border-white/10 shadow-2xl">
-                    <img alt="Daniel Rasas Portrait" class="w-full h-auto duration-0" src="media/self1.JPG" />
+                    <img alt="Daniel Rasas Portrait"
+                        class="w-full h-auto transition-transform duration-500 hover:scale-105"
+                        src="media/self1_copy.JPG" />
                 </div>
             </div>
         </div>
     </section>
-    <section
+    <section id="work-experience"
         class="min-h-screen w-full flex items-center justify-center py-16 px-6 md:px-12 bg-surface-dark/30 border-b border-white/5">
         <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div class="hidden md:block relative w-full rounded-xl overflow-hidden border border-white/10">
-                <img alt="Engineering Work Environment" class="w-full h-auto" src="media/work_photo.JPG" />
+                <img alt="Engineering Work Environment"
+                    class="w-full h-auto transition-transform duration-500 hover:scale-105"
+                    src="media/work_photo.JPG" />
             </div>
             <div class="flex flex-col gap-10">
                 <div class="border-l-4 border-primary pl-6 py-0.5">
                     <h2 class="text-3xl font-bold text-white leading-tight">Work Experience</h2>
                 </div>
                 <div class="space-y-8">
-                    <div class="group">
+                    <div>
                         <div class="flex justify-between items-baseline mb-2">
-                            <h3 class="text-xl font-bold text-white group-hover:text-primary">Process Safety Engineering
+                            <h3 class="text-xl font-bold text-white hover:text-primary transition-colors">Process Safety
+                                Engineering
                                 Intern</h3>
                             <span class="text-sm font-mono text-gray-500">Summer 2025</span>
                         </div>
@@ -131,13 +156,15 @@
                         <ul class="space-y-2 text-gray-400 text-sm leading-relaxed list-disc list-outside ml-4">
                             <li>Revalidated 14+ pressure relief valve sizings to current API standards using Python and
                                 HYSYS.</li>
-                            <li>Identified root cause of hydrotreater exchanger fouling and developed a tool to monitor
-                                anti-foulant injection effectiveness.</li>
+                            <li>Identified root cause of hydrotreater exchanger fouling and drove antifoulant injection
+                                plan with vendor to avoid [X] MBPD feed restriction.
+                            </li>
                         </ul>
                     </div>
-                    <div class="group">
+                    <div>
                         <div class="flex justify-between items-baseline mb-2">
-                            <h3 class="text-xl font-bold text-white group-hover:text-primary">Process Engineering Intern
+                            <h3 class="text-xl font-bold text-white hover:text-primary transition-colors">Process
+                                Engineering Intern
                             </h3>
                             <span class="text-sm font-mono text-gray-500">Summer 2024</span>
                         </div>
@@ -149,9 +176,10 @@
                             <li>Built unit trend monitors to predict spray header fouling using Seeq.</li>
                         </ul>
                     </div>
-                    <div class="group">
+                    <div>
                         <div class="flex justify-between items-baseline mb-2">
-                            <h3 class="text-xl font-bold text-white group-hover:text-primary">Process Chemistry Intern
+                            <h3 class="text-xl font-bold text-white hover:text-primary transition-colors">Process
+                                Chemistry Intern
                             </h3>
                             <span class="text-sm font-mono text-gray-500">Summer 2023</span>
                         </div>
@@ -166,7 +194,7 @@
             </div>
         </div>
     </section>
-    <section class="min-h-screen w-full flex flex-col justify-center py-16 px-6 md:px-12">
+    <section id="my-projects" class="min-h-screen w-full flex flex-col justify-center py-16 px-6 md:px-12">
         <div class="max-w-6xl w-full mx-auto">
             <div class="mb-12 flex items-end justify-between">
                 <div>
@@ -179,15 +207,15 @@
                     href="proj1.html">
                     <div class="aspect-[4/3] overflow-hidden bg-gray-800">
                         <img alt="ChemECar Chemical Clock Design"
-                            class="w-full h-full object-cover group-hover:scale-105 duration-0"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             src="media/proj1_1.jpg" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold text-white mb-2 group-hover:text-primary">ChemECar Chemical Clock
                         </h3>
                         <p class="text-sm text-gray-400 mb-4 line-clamp-3">
-                            Designed a precise iodine clock reaction mechanism for the AIChE regional competition car.
-                            Features a custom photoresistor circuit for stopping triggers.
+                            Designed, built, and tested a hydrogen peroxide decomposition reaction - used
+                            as a chemical timer.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs font-mono bg-white/5 text-gray-300 px-2 py-1 rounded">Python</span>
@@ -201,14 +229,14 @@
                     href="proj2.html">
                     <div class="aspect-[4/3] overflow-hidden bg-gray-800">
                         <img alt="Gear Systems Design"
-                            class="w-full h-full object-cover group-hover:scale-105 duration-0"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             src="media/gears1.PNG" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold text-white mb-2 group-hover:text-primary">3D printed meshed gears
                         </h3>
                         <p class="text-sm text-gray-400 mb-4 line-clamp-3">
-                            3D printed gift for an amazing teacher, with a gear system opening a interior
+                            3D printed gift for an amazing teacher, with a gear system opening an interior
                             compartment (containing a thank-you note)
                         </p>
                         <div class="flex flex-wrap gap-2">
@@ -245,7 +273,8 @@
                 <a class="group block bg-surface-dark border border-white/10 rounded-xl overflow-hidden hover:border-primary/50"
                     href="proj4.html">
                     <div class="aspect-[4/3] overflow-hidden bg-gray-800">
-                        <img alt="Other Projects" class="w-full h-full object-cover group-hover:scale-105 duration-0"
+                        <img alt="Other Projects"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             src="media/3d_stencil.JPG" />
                     </div>
                     <div class="p-6">
@@ -265,6 +294,31 @@
         </div>
     </section>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const aboutSection = document.getElementById('about');
+            const navName = document.getElementById('nav-name');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    // If the about section is NOT intersecting (visible), show the name
+                    if (!entry.isIntersecting) {
+                        navName.classList.remove('opacity-0', 'pointer-events-none');
+                        navName.classList.add('opacity-100');
+                    } else {
+                        navName.classList.add('opacity-0', 'pointer-events-none');
+                        navName.classList.remove('opacity-100');
+                    }
+                });
+            }, {
+                // Trigger as soon as the about section is completely out of view at the top,
+                // or right before it starts going out of view. We can trigger when it's just past the header.
+                rootMargin: "-80px 0px 0px 0px"
+            });
+
+            observer.observe(aboutSection);
+        });
+    </script>
 </body>
 
 </html>
